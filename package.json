@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,16 @@
     "ejs": "^2.5.7",
     "express": "^4.16.2",
     "knex": "^0.13.0",
-    "pg": "^7.3.0"
-  }
+    "pg": "^7.3.0",
+    "express-session": "^1.15.6",
+    "connect-session-knex": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michael-daniels/travelDash.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michael-daniels/travelDash/issues"
+  },
+  "homepage": "https://github.com/michael-daniels/travelDash#readme"
 }
