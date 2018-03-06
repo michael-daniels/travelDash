@@ -31,19 +31,18 @@
   </header>
 
   <div class="container">
-    <h1><!--Welcome <%= EJSVARHERE[0].name %>--></h1>
+
 
     <form action="/add_trip" method="post">
       <select class="" name="add_trip">
         <% for (let i = 0; i < flight.length; i++) { %>
-        <option value="<%= flight[0].id %>">
-          <%= flight[0].start %>
-          <%= flight[0].dest %>
+        <option value="<%= flight[i].id %>">
+          <%= flight[i].start %>
+          <%= flight[i].dest %>
         </option>
         <% } %>
 
       </select>
-      <button class="btn" type="submit">Add User</button>
     </form>
   </div><!--end container-->
 
