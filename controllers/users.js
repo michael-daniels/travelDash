@@ -3,6 +3,10 @@ const knex = require("../db/knex.js");
 module.exports = {
   // CHANGE ME TO AN ACTUAL FUNCTION
   createUser: function(req, res) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> e47c65724c42ae9c518c8eba474020cf4233e1ae
     knex('users').insert(req.body, "*")
     .then((result)=>{
       console.log("result: ", result);
