@@ -3,7 +3,6 @@ const knex = require("../db/knex.js");
 module.exports = {
   // CHANGE ME TO AN ACTUAL FUNCTION
   createUser: function(req, res) {
-<<<<<<< HEAD
 
     knex('users').insert(req.body, "*")
 
@@ -16,10 +15,6 @@ module.exports = {
       req.session.save(()=>{
         res.redirect('/trips');
       })
-=======
-    knex('users').insert(req.body).then(()=>{
-      res.redirect('/trips')
->>>>>>> 26010873043ad898737470526d31031c36bbcfcf
     })
 
 
