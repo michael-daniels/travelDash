@@ -10,6 +10,8 @@ module.exports = function(app){
 
   app.post('/add_user', users.createUser);
 
+  //app.post('/user/add/:id', users.addSession)
+
   app.get('/trips', flight.displayFlight)
 
 }
