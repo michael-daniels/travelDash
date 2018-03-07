@@ -1,10 +1,21 @@
+h4 {
+  background-color: #007bff;
+  color:white;
+}
 form {
   margin:25px 0;
 }
+input {
+  text-align: center;
+}
 .container {
   text-align: center;
+  padding: 50px 0;
 }
 .btn {
   background-color: #007bff;
+  color:white;
+}
+.welcome-user {
   color:white;
 }

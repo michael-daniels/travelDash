@@ -22,22 +22,18 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
   </header>
 
   <div class="container">
     <form action="/airline_logged_in" method="post">
-      <select class="choose-airline-select" name="airline_login">
+      <p><select class="choose-airline-select" name="airline_login">
         <% for (let i = 0; i < airlines.length; i++) { %>
         <option value="<%= airlines[i].id %>"><%= airlines[i].name %></option>
         <% } %>
-      </select>
-      <button class="btn" type="submit">Login</button>
+      </select></p>
+      <p><button class="btn" type="submit">Login</button></p>
     </form>
   </div><!--end container-->
 
