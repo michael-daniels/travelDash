@@ -14,7 +14,7 @@ module.exports = function(app){
 
   app.get('/trips', flight.displayFlight);
 
-  //working...
+
   app.post('/trips/add_trips', trips.addTrips);
 
 
@@ -25,6 +25,5 @@ module.exports = function(app){
   app.post('/airline_logged_in', airline.airlineLoggedIn);
 
   app.get('/airline', airline.airline);
-
 
 }
