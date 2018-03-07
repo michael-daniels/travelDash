@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Airline - Home</title>
+  <title>Airline - Airline Login</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -27,14 +27,17 @@
   </header>
 
   <div class="container">
-    <form action="/airline_logged_in" method="post">
-      <p><select class="choose-airline-select" name="airline_login">
-        <% for (let i = 0; i < airlines.length; i++) { %>
-        <option value="<%= airlines[i].id %>"><%= airlines[i].name %></option>
-        <% } %>
-      </select></p>
-      <p><button class="btn" type="submit">Login</button></p>
-    </form>
+    <div class="form-column">
+      <h4>Airline Login</h4>
+      <form action="/airline_logged_in" method="post">
+        <p><select class="choose-airline-select" name="airline_login">
+          <% for (let i = 0; i < airlines.length; i++) { %>
+          <option value="<%= airlines[i].id %>"><%= airlines[i].name %></option>
+          <% } %>
+        </select></p>
+        <p><button class="btn" type="submit">Login</button></p>
+      </form>
+  </div>
   </div><!--end container-->
 
 

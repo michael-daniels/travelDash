@@ -31,25 +31,32 @@
 
     <div class="trips-row row">
 
-      <div class="trips-left-col col-md-6">
+      <div class="col-md-6">
+        <div class="trips-left-col">
         <h4>Upcoming Trips</h4>
         <div class="single-upcoming-trip">
-          <h5>Description</h5>
-          <h5>Flight</h5>
+          <% for (let i = 0; i < 3; i++) { %>
+            <div>
+              <p>FLIGHT INFO</p>
+            </div>
+          <% } %>
         </div>
       </div>
-      <div class="trips-right-col col-md-6">
-        <h4>Create a trip</h4>
-        <form action="/trips/add_trips" method="post">
-          <p><select class="" name="flight_id">
-            <% for (let i = 0; i < flight.length; i++) { %>
-            <option value="<%= flight[i].id %>">
-              <%= flight[i].start %> to <%= flight[i].dest %>
-            </option>
-            <% } %>
-          </select></p>
-          <p><button class="btn" type="submit">Create Trip</button></p>
-        </form>
+      </div>
+      <div class="col-md-6">
+        <div class="trips-right-col">
+          <h4>Create a trip</h4>
+          <form action="/trips/add_trips" method="post">
+            <p><select class="" name="flight_id">
+              <% for (let i = 0; i < flight.length; i++) { %>
+              <option value="<%= flight[i].id %>">
+                <%= flight[i].start %> to <%= flight[i].dest %>
+              </option>
+              <% } %>
+            </select></p>
+            <p><button class="btn" type="submit">Create Trip</button></p>
+          </form>
+      </div>
       </div>
     </div><!--end trips-row-->
 
