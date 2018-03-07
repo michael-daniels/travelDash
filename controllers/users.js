@@ -5,7 +5,7 @@ module.exports = {
   createUser: function(req, res) {
     knex('users').insert(req.body, "*")
     .then((result)=>{
-      console.log("result: ", result);
+
       req.session.user = result[0];
 
       console.log('session: ',req.session.user)

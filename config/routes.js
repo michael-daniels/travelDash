@@ -3,6 +3,7 @@ const users = require("../controllers/users.js");
 const index = require("../controllers/index.js");
 const flight = require("../controllers/flight.js");
 const airline = require("../controllers/airline.js");
+const trips = require("../controllers/trips.js")
 
 
 module.exports = function(app){
@@ -13,9 +14,11 @@ module.exports = function(app){
 
   app.get('/trips', flight.displayFlight);
 
-  app.get('/airline_new', airline.airlineGet);
 
-  app.post('/add_airline', airline.addAirline);
+  app.post('/trips/add_trips', trips.addTrips);
+
+
+  app.get('/airline_new', airline.airlineGet);
 
   app.get('/airline_login', airline.airlineLogin);
 
