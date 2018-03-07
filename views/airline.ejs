@@ -22,10 +22,6 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
   </header>
@@ -34,18 +30,27 @@
 
     <div class="trips-row row">
 
-      <div class="trips-left-col col-md-6">
-        <h4>Upcoming Flights</h4>
+      <div class="col-md-6">
+        <div class="trips-left-col">
+          <h4>Upcoming Flights</h4>
+          BLAH
+          BLAH
+        </div>
       </div>
-      <div class="trips-right-col col-md-6">
+
+
+      <div class="col-md-6">
+        <div class="trips-left-col">
         <h4>Create a Flight</h4>
         <form action="/add_trip" method="post">
-          <select class="" name="add_trip">
+          <p><input type="text" name="start" placeholder="From"></p>
+          <p><input type="text" name="dest" placeholder="To"></p>
+          <p><select class="" name="add_trip"></p>
             <option value="">Testing</option>
-
-
           </select>
+          <p><button class="btn" type="submit">Create Flight</button></p>
         </form>
+      </div>
       </div>
     </div><!--end trips-row-->
 

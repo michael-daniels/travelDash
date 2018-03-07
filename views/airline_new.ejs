@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Airline - Home</title>
+  <title>Airline - Airline New</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="/style.css">
 </head>
@@ -22,19 +22,18 @@
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
       </div>
     </nav>
   </header>
 
   <div class="container">
-    <form action="/add_airline" method="post">
-      <input type="text" name="name" placeholder="Airline Name">
-      <button class="btn" type="submit">Add Airline</button>
-    </form>
+    <div class="form-column">
+      <h4>Create an Airline</h4>
+      <form action="/add_airline" method="post">
+        <p><input type="text" name="name" placeholder="Airline Name"></p>
+        <p><button class="btn" type="submit">Add Airline</button></p>
+      </form>
+    </div>
   </div><!--end container-->
 
 
