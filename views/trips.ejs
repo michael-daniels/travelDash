@@ -41,15 +41,15 @@
       </div>
       <div class="trips-right-col col-md-6">
         <h4>Create a trip</h4>
-        <form action="/add_trip" method="post">
-          <select class="" name="add_trip">
+        <form action="/trips/add_trips" method="post">
+          <select class="" name="flight_id">
             <% for (let i = 0; i < flight.length; i++) { %>
             <option value="<%= flight[i].id %>">
               <%= flight[i].start %>
               <%= flight[i].dest %>
             </option>
             <% } %>
-
+            
           </select>
         </form>
       </div>
