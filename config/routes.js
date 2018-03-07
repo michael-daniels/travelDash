@@ -17,6 +17,7 @@ module.exports = function(app){
 
   app.post('/trips/add_trips', trips.addTrips);
 
+  app.post('/airline/add_airline,' airline.airlineGet)
 
   app.get('/airline_new', airline.airlineGet);
 
