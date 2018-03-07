@@ -35,9 +35,9 @@
         <div class="trips-left-col">
         <h4>Upcoming Trips</h4>
         <div class="single-upcoming-trip">
-          <% for (let i = 0; i < 3; i++) { %>
+          <% for (let i = 0; i < tripResult.length; i++) { %>
             <div>
-              <p>FLIGHT INFO</p>
+              <p> <%= tripResult[i].dest %> </p>
             </div>
           <% } %>
         </div>
